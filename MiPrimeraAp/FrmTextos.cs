@@ -39,5 +39,25 @@ namespace MiPrimeraAp
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            txtMusica.Focus();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (button2.Text == "Escritura")
+            {
+                button2.Text = "Solo lectura";
+                txtNombre.ReadOnly = false;
+
+            }
+            else
+            {
+                button2.Text = "Escritura";
+                txtNombre.ReadOnly = true;
+            }
+        }
     }
 }
