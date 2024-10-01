@@ -40,7 +40,7 @@
             // 
             // lblLado1
             // 
-            this.lblLado1.Location = new System.Drawing.Point(84, 38);
+            this.lblLado1.Location = new System.Drawing.Point(84, 34);
             this.lblLado1.Name = "lblLado1";
             this.lblLado1.Size = new System.Drawing.Size(249, 20);
             this.lblLado1.TabIndex = 0;
@@ -96,13 +96,13 @@
             this.btnComprobar.TabIndex = 6;
             this.btnComprobar.Text = "¿Sera un triangulo?";
             this.btnComprobar.UseVisualStyleBackColor = true;
-            this.btnComprobar.Click += new System.EventHandler(this.btnCalcular_Click);
+            this.btnComprobar.Click += new System.EventHandler(this.btnComprobar_Click);
             // 
             // lblResultado
             // 
             this.lblResultado.Location = new System.Drawing.Point(84, 151);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(237, 20);
+            this.lblResultado.Size = new System.Drawing.Size(249, 20);
             this.lblResultado.TabIndex = 7;
             // 
             // Frm2
@@ -119,8 +119,10 @@
             this.Controls.Add(this.lblLado3);
             this.Controls.Add(this.lblLado2);
             this.Controls.Add(this.lblLado1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Frm2";
             this.Text = "Frm2";
+            this.Load += new System.EventHandler(this.Frm2_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -27,7 +27,30 @@ namespace MiPrimeraAp
 
         }
 
-        private void btnCalcular_Click(object sender, EventArgs e)
+        private void btnComprobar_Click(object sender, EventArgs e)
+        {
+
+            int ladoA, ladoB, ladoC;
+
+            bool booLadoA = int.TryParse(lblLado1.Text, out ladoA);
+            bool booLadoB = int.TryParse(lblLado2.Text, out ladoB);
+            bool booLadoC = int.TryParse(lblLado1.Text, out ladoC);
+
+            if( !booLadoA|| !booLadoB|| !booLadoC)
+            {
+                MessageBox.Show("Hay datos no numericos");
+                return;
+            }
+
+            if (ladoA == ladoB && ladoB==ladoC && ladoA== ladoC)
+            {
+                lblResultado.Text = "Es un triangulo equilatero";
+            }   
+         
+
+        }
+
+        private void Frm2_Load(object sender, EventArgs e)
         {
 
         }
