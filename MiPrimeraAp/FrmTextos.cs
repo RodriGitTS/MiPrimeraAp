@@ -10,11 +10,34 @@ using System.Windows.Forms;
 
 namespace MiPrimeraAp
 {
-    public partial class Frm1 : Form
+    public partial class FrmTextos : Form
     {
-        public Frm1()
+        public FrmTextos()
         {
             InitializeComponent();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (!txtContraseña.UseSystemPasswordChar)
+            {
+                txtContraseña.UseSystemPasswordChar = true;
+            }else { txtContraseña.UseSystemPasswordChar=false; }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
