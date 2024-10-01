@@ -27,45 +27,53 @@ namespace MiPrimeraAp
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btnMostrarPassW_Click(object sender, EventArgs e)
         {
             if (!txtContraseña.UseSystemPasswordChar)
             {
+                txtContraseña.Text = "Ocultar";
                 txtContraseña.UseSystemPasswordChar = true;
-            }else { txtContraseña.UseSystemPasswordChar=false; }
+            }else {
+                txtContraseña.Text = "Mostrar";
+                txtContraseña.UseSystemPasswordChar=false; }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnActivarApellido_Click(object sender, EventArgs e)
         {
-            if (button3.Text == "Desactivar")
+            if (btnActivarApellido.Text == "Desactivar")
             {
                 txtApellido.Enabled = true;
             }
             else
             {
-                button3.Text= "Activar";
+                btnActivarApellido.Text= "Activar";
                 txtApellido.Enabled=false;
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnFoco_Click(object sender, EventArgs e)
         {
             txtMusica.Focus();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnEscritura_click(object sender, EventArgs e)
         {
-            if (button2.Text == "Escritura")
+            if (btnEscritura.Text == "Escritura")
             {
-                button2.Text = "Solo lectura";
+                btnEscritura.Text = "Solo lectura";
                 txtNombre.ReadOnly = false;
 
             }
             else
             {
-                button2.Text = "Escritura";
+                btnEscritura.Text = "Escritura";
                 txtNombre.ReadOnly = true;
             }
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

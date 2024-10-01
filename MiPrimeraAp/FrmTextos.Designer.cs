@@ -32,9 +32,9 @@
             this.txtMusica = new System.Windows.Forms.TextBox();
             this.txtApellido = new System.Windows.Forms.TextBox();
             this.txtContraseña = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnFoco = new System.Windows.Forms.Button();
+            this.btnEscritura = new System.Windows.Forms.Button();
+            this.btnActivarApellido = new System.Windows.Forms.Button();
             this.btnHacerVisible = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -72,35 +72,35 @@
             this.txtContraseña.Size = new System.Drawing.Size(252, 20);
             this.txtContraseña.TabIndex = 3;
             // 
-            // button1
+            // btnFoco
             // 
-            this.button1.Location = new System.Drawing.Point(369, 104);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 35);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Pasar foco";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnFoco.Location = new System.Drawing.Point(369, 104);
+            this.btnFoco.Name = "btnFoco";
+            this.btnFoco.Size = new System.Drawing.Size(136, 35);
+            this.btnFoco.TabIndex = 4;
+            this.btnFoco.Text = "Pasar foco";
+            this.btnFoco.UseVisualStyleBackColor = true;
+            this.btnFoco.Click += new System.EventHandler(this.btnFoco_Click);
             // 
-            // button2
+            // btnEscritura
             // 
-            this.button2.Location = new System.Drawing.Point(369, 177);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(118, 27);
-            this.button2.TabIndex = 5;
-            this.button2.Text = "Escritura";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnEscritura.Location = new System.Drawing.Point(369, 177);
+            this.btnEscritura.Name = "btnEscritura";
+            this.btnEscritura.Size = new System.Drawing.Size(118, 27);
+            this.btnEscritura.TabIndex = 5;
+            this.btnEscritura.Text = "Escritura";
+            this.btnEscritura.UseVisualStyleBackColor = true;
+            this.btnEscritura.Click += new System.EventHandler(this.btnEscritura_click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(369, 210);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(118, 24);
-            this.button3.TabIndex = 6;
-            this.button3.Text = "Activar";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnActivarApellido.Location = new System.Drawing.Point(369, 210);
+            this.btnActivarApellido.Name = "button3";
+            this.btnActivarApellido.Size = new System.Drawing.Size(118, 24);
+            this.btnActivarApellido.TabIndex = 6;
+            this.btnActivarApellido.Text = "Activar";
+            this.btnActivarApellido.UseVisualStyleBackColor = true;
+            this.btnActivarApellido.Click += new System.EventHandler(this.btnActivarApellido_Click);
             // 
             // btnHacerVisible
             // 
@@ -110,11 +110,12 @@
             this.btnHacerVisible.TabIndex = 7;
             this.btnHacerVisible.Text = "Hacer visible";
             this.btnHacerVisible.UseVisualStyleBackColor = true;
-            this.btnHacerVisible.Click += new System.EventHandler(this.button4_Click);
+            this.btnHacerVisible.Click += new System.EventHandler(this.btnMostrarPassW_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Location = new System.Drawing.Point(21, 184);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
@@ -124,6 +125,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label2.Location = new System.Drawing.Point(21, 213);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(49, 13);
@@ -134,6 +136,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label3.Location = new System.Drawing.Point(9, 239);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 13);
@@ -144,11 +147,13 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label4.Location = new System.Drawing.Point(21, 37);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(41, 13);
             this.label4.TabIndex = 11;
             this.label4.Text = "Musica";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // FrmTextos
             // 
@@ -161,9 +166,9 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnHacerVisible);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnActivarApellido);
+            this.Controls.Add(this.btnEscritura);
+            this.Controls.Add(this.btnFoco);
             this.Controls.Add(this.txtContraseña);
             this.Controls.Add(this.txtApellido);
             this.Controls.Add(this.txtMusica);
@@ -181,9 +186,9 @@
         private System.Windows.Forms.TextBox txtMusica;
         private System.Windows.Forms.TextBox txtApellido;
         private System.Windows.Forms.TextBox txtContraseña;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btnFoco;
+        private System.Windows.Forms.Button btnEscritura;
+        private System.Windows.Forms.Button btnActivarApellido;
         private System.Windows.Forms.Button btnHacerVisible;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
