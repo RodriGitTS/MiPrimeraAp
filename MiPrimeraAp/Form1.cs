@@ -60,6 +60,9 @@ namespace MiPrimeraAp
         private void button2_Click(object sender, EventArgs e)
         {
 
+            Frm3 f =new Frm3();
+            f.Show();
+
         }
 
         private void btnTextos_Click(object sender, EventArgs e)
@@ -78,8 +81,7 @@ namespace MiPrimeraAp
                     f.Show();
                 }
             }
-              Frm2 fo=new Frm2();
-            fo.Show();
+            
         }
     }
 }

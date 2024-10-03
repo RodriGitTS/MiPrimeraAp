@@ -38,12 +38,16 @@ namespace MiPrimeraAp
 
         private void btnTipoLetra_Click(object sender, EventArgs e)
         {
-
+            FontDialog fdlg=new FontDialog();
+            DialogResult dialogResult = fdlg.ShowDialog();
+            lblProbando.Font = fdlg.Font;
         }
 
         private void btnColor_Click(object sender, EventArgs e)
         {
-
+            var dlg = new ColorDialog();
+            DialogResult dialogResult=dlg.ShowDialog();
+            this.BackColor = dlg.Color;
         }
     }
 }

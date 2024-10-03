@@ -38,7 +38,6 @@
             // txtExplicacion
             // 
             this.txtExplicacion.AutoSize = true;
-            this.txtExplicacion.Enabled = false;
             this.txtExplicacion.Location = new System.Drawing.Point(153, 164);
             this.txtExplicacion.Name = "txtExplicacion";
             this.txtExplicacion.Size = new System.Drawing.Size(801, 25);
@@ -49,7 +48,6 @@
             // 
             // btnColor
             // 
-            this.btnColor.Enabled = false;
             this.btnColor.Location = new System.Drawing.Point(253, 255);
             this.btnColor.Name = "btnColor";
             this.btnColor.Size = new System.Drawing.Size(147, 65);
@@ -60,7 +58,6 @@
             // 
             // btnTipoLetra
             // 
-            this.btnTipoLetra.Enabled = false;
             this.btnTipoLetra.Location = new System.Drawing.Point(634, 255);
             this.btnTipoLetra.Name = "btnTipoLetra";
             this.btnTipoLetra.Size = new System.Drawing.Size(137, 65);
@@ -72,9 +69,10 @@
             // lblProbando
             // 
             this.lblProbando.Enabled = false;
-            this.lblProbando.Location = new System.Drawing.Point(424, 375);
+            this.lblProbando.Location = new System.Drawing.Point(407, 409);
+            this.lblProbando.Multiline = true;
             this.lblProbando.Name = "lblProbando";
-            this.lblProbando.Size = new System.Drawing.Size(178, 31);
+            this.lblProbando.Size = new System.Drawing.Size(260, 91);
             this.lblProbando.TabIndex = 5;
             this.lblProbando.Text = "Probando...";
             this.lblProbando.TextChanged += new System.EventHandler(this.lblProbando_TextChanged);
