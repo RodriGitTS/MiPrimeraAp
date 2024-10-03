@@ -123,6 +123,7 @@
             this.Name = "Frm2";
             this.Text = "Frm2";
             this.Load += new System.EventHandler(this.Frm2_Load);
+            this.Resize += new System.EventHandler(this.formTriangulo_resize);
             this.ResumeLayout(false);
             this.PerformLayout();
 

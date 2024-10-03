@@ -54,5 +54,10 @@ namespace MiPrimeraAp
         {
 
         }
+
+        private void formTriangulo_resize(object sender, EventArgs e)
+        {
+           
+        }
     }
 }
