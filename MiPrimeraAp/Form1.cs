@@ -72,12 +72,14 @@ namespace MiPrimeraAp
                 }
                 else
                 {
-                    FrmTextos f = new FrmTextos();
+                    Frm2 f = new Frm2();
                     f.MdiParent = this;
                     f.Dock = DockStyle.Fill;
                     f.Show();
                 }
             }
+              Frm2 fo=new Frm2();
+            fo.Show();
         }
     }
 }

@@ -16,5 +16,34 @@ namespace MiPrimeraAp
         {
             InitializeComponent();
         }
+
+        private void Frm3_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+                    }
+
+        private void lblProbando_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTipoLetra_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnColor_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
